@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amindi.ge</title>
+    <link rel="stylesheet" href="https://cdn.web-fonts.ge/fonts/alk-sanet/css/alk-sanet.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="./images/header-logo.png" alt="logo">
+        </div>
+        <div class="navigation flex">
+            <ul class="flex">
+                <li>
+                    ამინდის პროგნოზი
+                </li>
+                <li>
+                    სიახლეები
+                </li>
+                <li>
+                    ჯანმრთელობა
+                </li>
+                <li>
+                    რადიო
+                </li>
+                <li>
+                    სასარგებლო ინფორმაცია
+                </li>
+                <li>
+                    რეკლამა
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="container flex">
+            <div class="left">
+                <div class="current-weather mb-16">
+                    <h1>
+                        თბილისი
+                    </h1>
+                    <p>
+                        ხუთშაბათი, 28 სექტემბერი
+                    </p>
+                    <p>
+                        00:53:08
+                    </p>
+                    <div class="degrees flex">
+                        <div id="weatherBigPicture">
+                            JS IMG
+                        </div>
+
+                        <span id="temperature">
+                            JS T
+                        </span>
+
+                    </div>
+                    <div id="conditionNow" class="current-phrase text-center mb-16">
+                        JS მოწმენდილი
+                    </div>
+                </div>
+
+                <div class="weather-hours-left mb-16">
+                    <h2>
+                        ამინდი საათების მიხედვით
+                    </h2>
+                    <div id="leftHourly">
+                        <div class="flex">
+                            <div>
+                                0 საათი
+                            </div>
+                            <div>
+                                <img src="./images/0-15.png" alt="0-15">
+                            </div>
+                            <div>
+                                17°
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                1 საათი
+                            </div>
+                            <div>
+                                <img src="./images/0-15.png" alt="0-15">
+                            </div>
+                            <div>
+                                17°
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                2 საათი
+                            </div>
+                            <div>
+                                <img src="./images/0-15.png" alt="0-15">
+                            </div>
+                            <div>
+                                17°
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                3 საათი
+                            </div>
+                            <div>
+                                <img src="./images/0-15.png" alt="0-15">
+                            </div>
+                            <div>
+                                17°
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div>
+                                4 საათი
+                            </div>
+                            <div>
+                                <img src="./images/0-15.png" alt="0-15">
+                            </div>
+                            <div>
+                                17°
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="flex">
+                        იხილეთ სრულად
+                    </button>
+
+                </div>
+
+                <div class="wind flex mb-16">
+                    <div class="turbine">
+                        <div>
+                            <div class="big-turbine">
+                                <img src="./images/b1.png" alt="b1" class="rotate" />
+                            </div>
+                            <div class="small-turbine">
+                                <img src="./images/b2.png" alt="b2" class="rotate" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wind-info">
+                        <h2>
+                            ქარი და წნევა
+                        </h2>
+                        <p>
+                            ქარის სიჩქარე:
+                        </p>
+                        <p id="windSp">
+                            JS
+                        </p>
+                        <p>
+                            წნევა:
+                        </p>
+                        <p id="pressure">
+                            JS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="more-info mb-16 flex">
+                    <div class="more-info-left">
+                        <p>ტემპერატურის მგრძნობელობა:</p>
+                        <p>ქარში მგრძნობელობა:</p>
+                        <p>ტენიანობა:</p>
+                        <p>ხილვადობა:</p>
+                    </div>
+                    <div class="more-info-right">
+                        <p id="temperatureInWind">
+                            18
+                        </p>
+                        <p>
+                            17
+                        </p>
+                        <p>
+                            NE
+                        </p>
+                        <p>
+                            65 %
+                        </p>
+                        <p>
+                            13 kph
+                        </p>
+                        <p>
+                            102.17 kpa
+                        </p>
+                        <p>
+                            16 km
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="headerv2 flex">
+                    <div>
+                        <button>
+                            აირჩიე ქალაქი
+                        </button>
+                    </div>
+                    <div class="headerv2-right flex">
+                        <div class="search-relat">
+                            <input type="text" name="search" placeholder="მოძებნე ქალაქი" class="mr-16 search">
+                            <div>
+                                <i class="fa-solid fa-magnifying-glass "></i>
+                            </div>
+                        </div>
+                        <div class="change-laguange mr-16">
+                            <div class="change-laguange-active flex ">
+
+                                <img src="./images/geo.png" alt="geo">
+                                <span>ქართული</span>
+
+                                <div class="change-laguange-dropdown">
+                                    <img src="./images/eng.png" alt="geo">
+                                    <span>English</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="cf ">
+
+                            C°
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-main">
+                    <div class="right-main-container">
+                        <div id="mainHourly">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="flex">
+            <div>
+                <img src="./images/header-logo.png" alt="logo">
+            </div>
+            <div>
+                <ul class="flex">
+                    <li>ამინდის პროგნოზი </li>
+                    <li>სიახლეები</li>
+                    <li>ჯანმრთელობა</li>
+                    <li>რადიო</li>
+                    <li>სასარგებლო ინფორმაცია</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript.js"></script>
+</body>
+
+</html>
